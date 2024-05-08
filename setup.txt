@@ -1,0 +1,44 @@
+
+# GoNature
+
+Welcome to Gonature, a client-server application developed in Java designed to help you manage and analyze user data effectively.
+
+## Getting Started
+
+Before you dive into the capabilities of Gonature, there are a few prerequisites and setup steps you need to follow to ensure a smooth experience.
+
+### Prerequisites
+
+- Java Development Kit (JDK) installed on your system.
+- MySQL Server setup for database management.
+
+### Initial Setup
+
+#### Locate userData.csv
+
+1. Ensure that the `userData.csv` file is located on your Desktop. This file is crucial for the application's operation, as it contains the user data Gonature will process.
+
+#### Import the SQL File
+
+1. Import the provided SQL file into your MySQL database. This step is necessary to set up the database schema Gonature will use.
+2. After importing the SQL schema, you need to adjust a MySQL server setting to allow the loading of the `userData.csv` file into your database. Set `local_infile` to `1` in your MySQL server settings. This step is crucial for the application to be able to load and use the `userData.csv`.
+
+   ```sql
+   SET GLOBAL local_infile = 1;
+   ```
+
+#### Running the Application
+
+1. **Start the Server**: Before interacting with the client application, make sure the Gonature server is running. The server must be active to handle requests and perform operations.
+
+2. **Import userData**: With the server running, proceed to import the `userData.csv` into the Gonature application. This step is essential for populating the database with your user data.
+
+3. **Launch the Client**: Once the server is up and running and the data is imported, you can start the Gonature client application. At this point, everything should be set up for you to utilize Gonature to its full extent.
+
+## Using Gonature
+
+After following the setup instructions, you're ready to explore the features and functionalities of Gonature. Enjoy managing and analyzing user data with ease and efficiency.
+
+## Support
+
+Should you encounter any issues or have questions regarding Gonature, please feel free to reach out for support.
