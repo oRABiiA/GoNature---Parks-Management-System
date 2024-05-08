@@ -1,0 +1,10 @@
+100000934,department,12345678,Ethan,Anderson,0501234567,ethan.anderson@example.com,Approved,Employee,,Department Manager
+100000926,employee1,12345678,Lucas,Moore,0501231231,lucas.moore@example.com,Approved,Employee,1,Park Employee
+219234124,employee2,12345678,Max,Ronaldo,0503418900,max.ronaldo@example.com,Approved,Employee,2,Park Employee
+100000918,employee3,12345678,Michael,Brown,0502323232,michael.brown@example.com,Approved,Employee,3,Park Employee
+208342459,guide1,12345678,Lewis,Hamilton,0528468520,lewis@example.com,Pending,Guide,,Not Employee
+101230926,guide2,12345678,mark,mark,0542315645,mark@example.com,Pending,Guide,,Not Employee
+201842563,manager1,12345678,Tania,Newton,0523128974,tania@example.com,Approved,Employee,1,Park Manager
+100000900,manager2,12345678,Sophia,Taylor,0503987456,sophia.taylor@example.com,Approved,Employee,2,Park Manager
+200000800,manager3,12345678,Renee,Bard,0503826452,renee@example.com,Approved,Employee,3,Park Manager
+100000892,service,12345678,Jane,Smith,0548123465,jane.smith@example.com,Approved,Employee,,Service Employee
