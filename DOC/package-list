@@ -1,0 +1,10 @@
+client
+gui.controller
+gui.view
+jdbc
+jdbc.query
+logic
+ocsf
+server
+utils
+utils.enums
