@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="app" stylesheets="@appStyles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="250.0" styleClass="landing_page_left_side_vbox" stylesheets="@appStyles.css">
+         <children>
+            <ImageView fx:id="icon" fitHeight="200.0" fitWidth="200.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../../utils/resources/logo.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="180.0" prefWidth="260.0" style="-fx-alignment: center;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="220.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="landing_page_left_side_header" text="Welcome To GoNature" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="landing_page_left_side_body" text="Nature is amazing!" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="landing_page_left_side_body" text="Explore, Feel, Enjoy the Nature" />
+               </children>
+            </VBox>
+            <Button fx:id="backToOptionsButton" layoutX="30.0" layoutY="400.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="52.0" prefWidth="134.0" style="-fx-background-color: transparent;" styleClass="app_transparent" visible="false">
+               <graphic>
+                  <ImageView fx:id="backImage" fitHeight="44.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/resources/whiteBackIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" styleClass="landing_page_right_side" stylesheets="@appStyles.css">
+         <children>
+            <VBox fx:id="connectToServerVbox" prefHeight="366.0" prefWidth="450.0" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label styleClass="right_side_anchor_headerLabel" text="Connect To Server">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <HBox prefHeight="60.0" prefWidth="450.0">
+                     <children>
+                        <TextField fx:id="serverIpField" promptText="Enter Server IP" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="serverPortField" promptText="Enter Port" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="connectButton" mnemonicParsing="false" onAction="#onConnectToServerClicked" styleClass="app_green" text="Connect">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../utils/resources/selectIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </VBox>
+            <VBox fx:id="loginVbox" prefHeight="366.0" prefWidth="450.0" visible="false" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Select Account Type" />
+                  <ComboBox fx:id="accountTypeComboBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" promptText="Select" />
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="450.0">
+                     <children>
+                        <TextField fx:id="visitorField" layoutX="125.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="219.0" promptText="Enter ID Number" visible="false" AnchorPane.topAnchor="25.0" />
+                        <HBox fx:id="employeeOrGuideHbox" layoutY="-3.0" prefHeight="100.0" prefWidth="440.0" visible="false">
+                           <children>
+                              <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0" promptText="Enter Username" />
+                              <TextField fx:id="passwordField" promptText="Enter Password" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginClicked" styleClass="app_yellow" text="Login">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../utils/resources/enterParkIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </VBox>
+            <VBox fx:id="optionsVbox" prefHeight="366.0" prefWidth="450.0" styleClass="options_vbox" visible="false">
+               <children>
+                  <Label styleClass="app_header" text="Select Option">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <VBox prefHeight="118.0" prefWidth="450.0">
+                     <children>
+                        <Label styleClass="app_body" text="Already Registred?">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Button fx:id="optionLoginButton" mnemonicParsing="false" onAction="#onOptionLoginClicked" styleClass="app_yellow" text="Login">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/enterParkIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="104.0" prefWidth="450.0">
+                     <children>
+                        <Label styleClass="app_body" text="First Time?" />
+                        <Button fx:id="optionMakeOrderButton" mnemonicParsing="false" onAction="#onOptionMakeOrderClicked" styleClass="app_yellow" text="Make Order">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/makeOrderIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Pane fx:id="errorPane" layoutX="10.0" layoutY="363.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="432.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/resources/errorIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="178.0" layoutY="35.0" styleClass="make_order_error" text="Error Message :" />
+                  <HBox fx:id="errorSection" layoutX="15.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="398.0" styleClass="app_error_hbox">
+                     <children>
+                        <Label fx:id="errorMessageLabel" text="..." textFill="#c60000" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

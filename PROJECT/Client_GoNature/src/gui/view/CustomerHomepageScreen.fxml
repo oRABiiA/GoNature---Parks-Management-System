@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="940.0" styleClass="app" stylesheets="@appStyles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="750.0" layoutX="98.0" layoutY="149.0" opacity="0.91" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.03" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="97.04998779296875" AnchorPane.topAnchor="149.0">
+         <image>
+            <Image url="@../../utils/resources/homeBackground.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="250.0" layoutY="88.0" text="GoNature Application" textFill="#1e88a8">
+         <font>
+            <Font name="Calibri" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="42.0" text="Welcome to">
+         <font>
+            <Font name="Berlin Sans FB" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="264.0" text="About the Application" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="70.0" layoutY="167.0" prefHeight="120.0" prefWidth="790.0" style="-fx-alignment: top-center;">
+         <children>
+            <Label text="Experience the convenience of enhancing your park visit right from your fingertips." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Our app simplifies your adventure, allowing you to focus on enjoying the natural" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="beauty around you. With our easy-to-use interface, ordering and managing your" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="park amenities has never been quicker or more convenient." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="77.0" layoutY="310.0" prefHeight="52.0" prefWidth="790.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-alignment: top-center;">
+         <children>
+            <Label text="Designed with your needs in mind, our application offers a seamless way" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="to enhance your visit to our beautiful parks:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="77.0" layoutY="362.0" prefHeight="92.0" prefWidth="395.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-alignment: top-center;">
+         <children>
+            <Label text="Make Orders with Ease" textFill="#2fe1e1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label text="A few taps, and your order" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="is on its way, allowing you more" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="more time to explore and enjoy." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="386.0" layoutY="466.0" text="Our Parks" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="472.0" layoutY="362.0" prefHeight="92.0" prefWidth="395.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-alignment: top-center;">
+         <children>
+            <Label text="Manage Your Orders" textFill="#2fe1e1">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Keep track of your current and past orders " textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="with ease. Our app provides real-time updates" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="on order status, and easy access to order history" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="24.0" layoutY="518.0" prefHeight="248.0" prefWidth="298.0" style="-fx-alignment: top-center; -fx-background-color: rgba(0, 0, 0, 0.5);">
+         <children>
+            <Label text="Banias" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="32.0" />
+               </font>
+            </Label>
+            <Label text="Uncover the hidden gem of Banias, " textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="a natural reserve famous for its" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="cascading waterfall, the largest in Israel, " textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="and its ancient archaeological sites." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Wander through lush trails, explore" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="the remains of a Herodian palace and" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="a historic temple dedicated to the god" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Pan. It's a magical escape for nature" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="enthusiasts and history buffs alike." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="321.0" layoutY="518.0" prefHeight="248.0" prefWidth="298.0" style="-fx-alignment: top-center; -fx-background-color: rgba(0, 0, 0, 0.5);">
+         <children>
+            <Label text="Herodium" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="32.0" />
+               </font>
+            </Label>
+            <Label text="Explore the majesty of Herodium, an" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="awe-inspiring fortress built by King" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Herod the Great. This hilltop palace" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="complex offers panoramic views," textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text=" intricate ancient architecture, and a " textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="fascinating look into Judean history." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Dive into the past with its interactive" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="visitor center and the remnants of a " textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="once-lavish royal abode." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="618.0" layoutY="518.0" prefHeight="248.0" prefWidth="298.0" style="-fx-alignment: top-center; -fx-background-color: rgba(0, 0, 0, 0.5);">
+         <children>
+            <Label text="Masada" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="32.0" />
+               </font>
+            </Label>
+            <Label text="Ascend to the legendary Masada, a" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="symbol of endurance and perseverance" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="set atop an isolated rock plateau in the" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Judean Desert. This UNESCO World" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Heritage Site is home to the ancient" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="fortress of King Herod and the site of" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="the Zealots’ last stand against the" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Romans. Take the cable car or hike the" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Snake Path for a sunrise you'll never forget." textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

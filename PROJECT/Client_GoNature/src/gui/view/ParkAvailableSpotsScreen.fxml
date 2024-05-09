@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="940.0" styleClass="app" stylesheets="@appStyles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <Label fx:id="dateLabel" layoutX="782.0" layoutY="44.0" styleClass="app_date_label" text="Today 2024-06-03" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="27.0" />
+      <Label layoutX="324.0" layoutY="59.0" text="Available Spots" AnchorPane.topAnchor="62.0">
+         <font>
+            <Font name="Calibri" size="49.0" />
+         </font>
+      </Label>
+      <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="345.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../utils/resources/parkIcon.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="parkSelect" editable="true" layoutX="395.0" layoutY="211.0" prefWidth="150.0" promptText="Select Park" />
+      <Separator layoutX="20.0" layoutY="20.0" prefWidth="200.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <AnchorPane layoutX="13.0" layoutY="291.0" prefHeight="342.0" prefWidth="910.0" styleClass="park_parameters">
+         <children>
+            <AnchorPane layoutX="101.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="275.0" styleClass="park_parameters_left">
+               <children>
+                  <Label layoutX="15.0" layoutY="23.0" styleClass="account_balance" text="Current In Park" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="23.0" />
+                  <Label fx:id="currentInParkLabel" layoutX="107.0" layoutY="91.0" styleClass="park_parameters_number" text="50" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="107.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="531.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="275.0" styleClass="park_parameters_right">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="57.0" prefWidth="229.0" styleClass="account_balance" text="Max Capacity" wrapText="true" />
+                  <Label fx:id="maxCapacityLabel" layoutX="107.0" layoutY="100.0" styleClass="park_parameters_number" text="40" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

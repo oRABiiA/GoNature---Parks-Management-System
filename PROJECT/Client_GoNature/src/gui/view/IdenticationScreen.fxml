@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="940.0" styleClass="app" stylesheets="@appStyles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <Label fx:id="dateLabel" layoutX="772.0" layoutY="34.0" styleClass="app_date_label" text="Today 2024-06-03" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="27.0" />
+      <Label layoutX="325.0" layoutY="62.0" text="Manage Order" AnchorPane.topAnchor="62.0">
+         <font>
+            <Font name="Calibri" size="49.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="orderIdField" layoutX="370.0" layoutY="235.0" promptText="Enter Order ID" />
+      <Button fx:id="searchButton" contentDisplay="RIGHT" layoutX="390.0" layoutY="321.0" mnemonicParsing="false" onAction="#onSearchClicked" styleClass="app_search" text="Search">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../utils/resources/searchIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <HBox fx:id="errorSection" layoutX="45.0" layoutY="385.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="850.0" styleClass="app_error_hbox">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../utils/resources/errorIcon.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="make_order_error" text="Error Message :" />
+            <Label fx:id="errorMessageLabel" text="..." textFill="#c60000" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

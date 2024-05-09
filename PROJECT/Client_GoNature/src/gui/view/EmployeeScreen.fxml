@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <left>
+      <VBox prefHeight="800.0" prefWidth="260.0" styleClass="landing_page_left_side" stylesheets="@appStyles.css">
+         <children>
+          <AnchorPane prefHeight="800.0" prefWidth="237.0">
+         <children>
+            <VBox layoutY="-2.0" prefHeight="172.0" prefWidth="240.0" style="-fx-alignment: center;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="197.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                              <Image url="@../../utils/resources/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutY="214.0" prefHeight="587.0" prefWidth="230.0" style="-fx-alignment: center;" styleClass="landing_page_left_side_vbox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="214.0">
+               <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="209.0" styleClass="landing_page_left_side_user_details">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="User Id: ">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="userIdLabel" text="123456789" />
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;">
+                                 <children>
+                                    <Label text="Type: " />
+                                    <Label fx:id="employeeTypeLabel" text="Employee" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="homeButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onHomeClicked" text="Home">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/homeIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                  <Button fx:id="addNewGuideButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onAddNewGuideClicked" text="Add New Guide">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../utils/resources/addGuideIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="parkEntranceButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onParkEntranceClicked" text="Park Entrance">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../utils/resources/blackEntranceIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                        <Button fx:id="createReportsButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onCreateReportsClicked" text="Create Reports">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/blackCreateReportsIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="viewReportsButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onViewReportsClicked" text="View Reports">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/manageOrdersIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="parkSettingsButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onParkSettingsClicked" text="Park Settings">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/settingsIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="requestsButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onRequestsClicked" text="Requests">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/requestsIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="parkSpotsButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onParkSpotsClicked" text="Park Spots">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/parkSpotsIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                  <Line endX="216.5" stroke="WHITE" />
+                        <VBox prefHeight="125.0" prefWidth="260.0" styleClass="landing_page_left_side_logout">
+                           <children>
+                        <Button fx:id="logoutButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onLogoutClicked" prefHeight="62.0" prefWidth="133.0" text="Logout">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../utils/resources/logoutIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="740.0" prefWidth="850.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

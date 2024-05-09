@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="940.0" styleClass="app" stylesheets="@appStyles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <Label fx:id="dateLabel" layoutX="772.0" layoutY="34.0" styleClass="app_date_label" text="Today 2024-06-03" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="27.0" />
+      <Label layoutX="332.0" layoutY="62.0" text="Park Entrance" AnchorPane.topAnchor="62.0">
+         <font>
+            <Font name="Calibri" size="49.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0" />
+      <HBox fx:id="errorSection" layoutX="45.0" layoutY="662.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="850.0" styleClass="app_error_hbox">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../utils/resources/errorIcon.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="make_order_error" text="Error Message :" />
+            <Label fx:id="errorMessageLabel" text="..." textFill="#c60000" />
+         </children>
+      </HBox>
+      <TableView fx:id="inParkTable" layoutX="42.0" layoutY="192.0" prefHeight="407.0" prefWidth="874.0">
+        <columns>
+          <TableColumn fx:id="orderIdCol" prefWidth="67.0" text="Order ID" />
+            <TableColumn fx:id="fromWhichTableCol" prefWidth="119.0" text="Preorder/Occasional" />
+          <TableColumn fx:id="amountCol" prefWidth="116.0" text="Amount Of Visitors" />
+            <TableColumn fx:id="isPaidCol" prefWidth="77.0" text="Paid?" />
+            <TableColumn fx:id="phoneCol" prefWidth="138.0" text="Owner Phone" />
+            <TableColumn fx:id="estimatedEnterCol" prefWidth="134.0" text="Estimated Enter Time" />
+            <TableColumn fx:id="estimatedExitCol" prefWidth="135.0" text="Estimated Exit Time" />
+            <TableColumn fx:id="statusCol" prefWidth="87.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="404.0" layoutY="156.0" prefHeight="23.0" prefWidth="150.0" text="Orders For Today" textAlignment="RIGHT" textFill="#bf2121">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="42.0" layoutY="707.0" prefHeight="79.0" prefWidth="874.0" styleClass="manager_order">
+         <children>
+            <Button fx:id="notArrivedButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onNotArrivedClicked" styleClass="app_search" text="Not Arrived">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/resources/cancelOrderIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="enterParkButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onEnterParkClicked" styleClass="app_search" text="Enter Park">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/resources/enterParkIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="exitParkButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onExitParkClicked" styleClass="app_search" text="Exit Park">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/resources/exitIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="newVisitButton" contentDisplay="RIGHT" layoutX="45.0" layoutY="609.0" mnemonicParsing="false" onAction="#onNewVisitClicked" styleClass="app_yellow" text="New Visit">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../utils/resources/ticketIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
